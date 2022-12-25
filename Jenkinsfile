@@ -1,7 +1,7 @@
 pipeline{
     agent { label 'slave1' }
     tools {
-      Go '1.19.4'
+      go '1.19.4'
    }
     stages {
         stage("Go-app"){
