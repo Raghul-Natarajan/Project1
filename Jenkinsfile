@@ -8,6 +8,7 @@ pipeline{
                sh '''
                    echo $PATH
                    go version
+                   hostname
                    go run main.go
                   '''
             }
