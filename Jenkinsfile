@@ -12,7 +12,7 @@ pipeline{
                    echo $PATH
                    go version
                    hostname
-                   go run main.go 
+                   go run main.go &
                   '''
             }
         }
