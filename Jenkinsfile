@@ -5,7 +5,11 @@ pipeline{
             
             steps{
                
-               sh 'go run main.go'
+               sh '''
+                   echo $PATH
+                   go version
+                   go run main.go
+                  '''
             }
         }
     }
