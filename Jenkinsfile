@@ -12,7 +12,8 @@ pipeline{
                    echo $PATH
                    go version
                    hostname
-                   go run main.go &
+                   netstat -nltpu | grep LISTEN
+                   go run main.go 
                   '''
             }
         }
