@@ -1,8 +1,8 @@
 pipeline{
-    agent none
+    agent { label 'slave1' }
     stages {
         stage("Go-app"){
-            agent { label 'slave1' }
+            
             steps{
                
                sh 'go run main.go'
